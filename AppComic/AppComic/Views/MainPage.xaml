@@ -8,6 +8,18 @@
             x:Class="AppComic.Views.MainPage">
 
     <TabbedPage.Children>
+
+        <NavigationPage Title=" Home ">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:HomePage />
+            </x:Arguments>
+        </NavigationPage>
+
         <NavigationPage Title="Browse">
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
@@ -16,6 +28,17 @@
             </NavigationPage.Icon>
             <x:Arguments>
                 <views:ItemsPage />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Rank">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:RankPage />
             </x:Arguments>
         </NavigationPage>
         
@@ -29,6 +52,9 @@
                 <views:AboutPage />
             </x:Arguments>
         </NavigationPage>
+
+ 
+        
     </TabbedPage.Children>
     
 </TabbedPage>

@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"             
+             x:Class="AppComic.Views.Page1" Title="Page 1" >
+    <ScrollView>
+        <StackLayout Padding="10" Spacing="10">
+            <Grid Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Frame Padding="0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="anh1.png" Aspect="Fill" />
+                        <StackLayout Orientation="Vertical" Grid.Column="1" Padding="10">
+                            <Label Text="Đấu phá thương khung" 
+                                   HorizontalTextAlignment="Start" FontSize="Small" TextColor="Black"/>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="250 Chap" FontSize="Micro"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="Tác giả : Hải Tặc" FontSize="Micro"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <BoxView Color="Gray" HorizontalOptions="Fill" HeightRequest="1"/>
+                            <Button BackgroundColor="#C1802A" TextColor="White" BorderRadius="30" Command="{Binding BeTouristCommand}"
+                                Text="Theo dõi" FontSize="Small" Clicked="Button1"  />
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="1" Padding="0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Orientation="Vertical" Padding="10">
+                            <Label Text="Võ động càng khôn"  HorizontalTextAlignment="Start"
+                       FontSize="Small" TextColor="Black"/>
+                            <Label HorizontalOptions="Start" >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+
+                                            <Span Text="150 Chap" FontSize="Micro" />
+
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="Tác giả : Hải Tặc" FontSize="Micro"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <BoxView Color="Gray" HorizontalOptions="FillAndExpand" HeightRequest="1"/>
+                            <Button BackgroundColor="#C1802A" TextColor="White" BorderRadius="30" HorizontalOptions="FillAndExpand"
+                            Text="Theo dõi" FontSize="Small"/>
+                        </StackLayout>
+                        <Image Source="anh2.jfif" Aspect="Fill" 
+                           Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+                <Frame Padding="0" Grid.Row="2">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="anh1.png" Aspect="Fill"/>
+                        <StackLayout Orientation="Vertical" Grid.Column="1" Padding="10">
+                            <Label Text="Đại Chúa Tể" 
+                                   HorizontalTextAlignment="Start" FontSize="Small" TextColor="Black"/>
+                            <Label HorizontalOptions="End" >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="350 Chap" FontSize="Micro"  />
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label HorizontalOptions="End" >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="Tác giả : Hải Tặc" FontSize="Micro"  />
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <BoxView Color="Gray" HorizontalOptions="FillAndExpand" HeightRequest="1"/>
+                            <Button BackgroundColor="#C1802A" TextColor="White" BorderRadius="30"
+                                Text="Theo dõi" FontSize="Small"/>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="3" Padding="0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Orientation="Vertical" Padding="10">
+                            <Label Text="Toàn Chức Pháp Sư"  HorizontalTextAlignment="End"
+                       FontSize="Small" TextColor="Black"/>
+                            <Label HorizontalOptions="Start" >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="20 Chap" FontSize="Micro" />
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label HorizontalOptions="Start" >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="Tác Giả : Hải Tặc" FontSize="Micro" />
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <BoxView Color="Gray" HorizontalOptions="FillAndExpand" HeightRequest="1"/>
+                            <Button BackgroundColor="#C1802A" TextColor="White" BorderRadius="30" HorizontalOptions="FillAndExpand"
+                            Text="Theo Dõi" FontSize="Small"/>
+                        </StackLayout>
+                        <Image Source="anh1.png" Aspect="Fill" 
+                           Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+                <Frame Padding="0" Grid.Row="4">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="anh1.png" Aspect="Fill"/>
+                        <StackLayout Orientation="Vertical" Grid.Column="1" Padding="10">
+                            <Label Text="Đấu La Đại Lục" 
+                                   HorizontalTextAlignment="Start" FontSize="Small" TextColor="Black"/>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="400 Chap" FontSize="Micro"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="Tác Giả : Hải Tặc" FontSize="Micro"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <BoxView Color="Gray" HorizontalOptions="FillAndExpand" HeightRequest="1"/>
+                            <Button BackgroundColor="#C1802A" TextColor="White" BorderRadius="30"
+                                Text="Theo Dõi" FontSize="Small"/>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
+    

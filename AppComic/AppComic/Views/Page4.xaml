@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppComic.Views.Page4">
+    <ScrollView>
+        <StackLayout Padding="0" Spacing="0">
+            <Grid Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    
+                    
+                </Grid.RowDefinitions>
+                <Frame Padding="0" >
+                    <Button Text="   &#60;   Back                                                                               " 
+                            Clicked="ButtonBack" BackgroundColor="AliceBlue" />
+                </Frame>
+                <Frame Padding="10" Grid.Row="1" >
+                    <Image Source="anh4.jpg"/>
+                </Frame>
+                <Frame Grid.Row="2" Padding="0">
+                    <Grid>
+                        <StackLayout Orientation="Vertical" Padding="10">
+                            
+                            <Label Text="Đấu Phá Thương Khung"/>
+                            <Label Text="Tác Giả : Hải Tặc"/>
+                            <Label Text="Chap : 50" />
+                            <Label Text="Số lược thích : 1020"/>
+                        </StackLayout>
+                    </Grid> 
+                </Frame>
+                <Frame Grid.Row="3" Padding="0">
+                    <Grid>
+                        <StackLayout>
+                            <BoxView Color="Gray" HorizontalOptions="Fill" HeightRequest="1"  />
+                            <Label Text="Danh sách chương" FontSize="Body"/>
+                            <Button Text="Chương 1" Clicked="ButtonChapter1" />
+                            <Button Text="Chương 2"/>
+                            <Button Text="Chương 3"/>
+                            <Button Text="Chương 4"/>
+                            <Button Text="Chương 5"/>
+                            <Button Text="Chương 6"/>
+                            <Button Text="Chương 7"/>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
