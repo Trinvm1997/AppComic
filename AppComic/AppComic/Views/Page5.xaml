@@ -19,10 +19,10 @@
                 </Frame>
                 <Frame Padding="10" Grid.Row="1">
                     
-                    <Label Text="Chap 1"/>
+                    <Label Text="{Binding Text}"/>
                 </Frame>
                 <Frame Grid.Row="2">
-                    <Label Text="File đọc ở đây"/>
+                    <Label Text="{Binding Description}"/>
                 </Frame>
             </Grid>
         </StackLayout>
