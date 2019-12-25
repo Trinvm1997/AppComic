@@ -6,11 +6,45 @@
              mc:Ignorable="d"
              x:Class="AppComic.Views.HomePage"
              Title="Home">
-    <ContentPage.Content>
+    <ScrollView>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Image Source="anh1.png" Aspect="Fill"/>
+            <Grid Margin="20,35,20,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.RowSpan="2" Text="Most Viewed Story"/>
+                <Label BackgroundColor="AliceBlue" Grid.Row="1" Grid.Column="0" Text="Story" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                <Label BackgroundColor="AliceBlue" Grid.Row="1" Grid.Column="1" Text="Story" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                <Label BackgroundColor="AliceBlue" Grid.Row="2" Grid.Column="0" Text="Story" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                <Label BackgroundColor="AliceBlue" Grid.Row="2" Grid.Column="1" Text="Story" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+            </Grid>
+            <Grid Margin="20,35,20,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.RowSpan="2" Text="Most Recommended Story"/>
+                <Label BackgroundColor="AliceBlue" Grid.Row="1" Grid.Column="0" Text="Story" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                <Label BackgroundColor="AliceBlue" Grid.Row="1" Grid.Column="1" Text="Story" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                <Label BackgroundColor="AliceBlue" Grid.Row="2" Grid.Column="0" Text="Story" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                <Label BackgroundColor="AliceBlue" Grid.Row="2" Grid.Column="1" Text="Story" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+            </Grid>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Signup"/>
+                <Button Text="Login"/>
+            </StackLayout>
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>

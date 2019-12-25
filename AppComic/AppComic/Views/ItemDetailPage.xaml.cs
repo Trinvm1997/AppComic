@@ -35,5 +35,34 @@ namespace AppComic.Views
             viewModel = new ItemDetailViewModel(item);
             BindingContext = viewModel;
         }
+
+        async void ButtonBack(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
+
+        private void PreviousButton(object sender, EventArgs e)
+        {
+            var item = new Item
+            {
+                Text = "Item 1",
+                Description = "This is an item description."
+            };
+
+            viewModel = new ItemDetailViewModel(item);
+            BindingContext = viewModel;
+        }
+
+        private void NextButton(object sender, EventArgs e)
+        {
+            var item = new Item
+            {
+                Text = "Item 2",
+                Description = "This is an item description 2."
+            };
+
+            viewModel = new ItemDetailViewModel(item);
+            BindingContext = viewModel;
+        }
     }
 }

@@ -5,16 +5,17 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="AppComic.Views.Page4">
-    <ScrollView>
+
+    <ScrollView >
         <StackLayout Padding="0" Spacing="0">
+            <Button Text="Add" BackgroundColor="AliceBlue" HorizontalOptions="End" Clicked="AddItem_Clicked" Margin="10"/>
             <Grid Padding="10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="2*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
-                    
-                    
+                                        
                 </Grid.RowDefinitions>
                 <Frame Padding="0" >
                     <Button Text="   &#60;   Back                                                                               " 
@@ -37,15 +38,39 @@
                 <Frame Grid.Row="3" Padding="0">
                     <Grid>
                         <StackLayout>
-                            <BoxView Color="Gray" HorizontalOptions="Fill" HeightRequest="1"  />
-                            <Label Text="Danh sách chương" FontSize="Body"/>
-                            <Button Text="Chương 1" Clicked="ButtonChapter1" />
-                            <Button Text="Chương 2"/>
-                            <Button Text="Chương 3"/>
-                            <Button Text="Chương 4"/>
-                            <Button Text="Chương 5"/>
-                            <Button Text="Chương 6"/>
-                            <Button Text="Chương 7"/>
+                            <ListView x:Name="ItemsListView"
+                                    ItemsSource="{Binding Items}"
+                                    VerticalOptions="FillAndExpand"
+                                    HasUnevenRows="true"
+                                    RefreshCommand="{Binding LoadItemsCommand}"
+                                    IsPullToRefreshEnabled="true"
+                                    IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                                    CachingStrategy="RecycleElement"
+                                    ItemSelected="OnItemSelected">
+                                <d:ListView.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>Chap 1</x:String>
+                                        <x:String>Chap 2</x:String>
+                                        <x:String>Chap 3</x:String>
+                                        <x:String>Chap 4</x:String>
+                                        <x:String>Chap 5</x:String>
+                                        <x:String>Chap 6</x:String>
+                                    </x:Array>
+                                </d:ListView.ItemsSource>
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell >
+                                            <StackLayout Padding="10" BackgroundColor="LightGray">
+                                                <Label Text="{Binding Text}" 
+                                d:Text="{Binding .}"
+                                LineBreakMode="NoWrap" 
+                                Style="{DynamicResource ListItemTextStyle}" 
+                                FontSize="16" />
+                                            </StackLayout>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
                         </StackLayout>
                     </Grid>
                 </Frame>

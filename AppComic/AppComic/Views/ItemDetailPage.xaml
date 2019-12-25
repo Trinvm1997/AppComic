@@ -8,10 +8,15 @@
              Title="{Binding Title}">
 
     <StackLayout Spacing="20" Padding="15">
+        <Button Text="Back" Clicked="ButtonBack"/>
         <Label Text="Text:" FontSize="Medium" />
         <Label Text="{Binding Item.Text}" d:Text="Item name" FontSize="Small"/>
         <Label Text="Description:" FontSize="Medium" />
         <Label Text="{Binding Item.Description}" d:Text="Item description" FontSize="Small"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <Button Text="Previous" Clicked="PreviousButton"/>
+            <Button Text="Next" Clicked="NextButton"/>
+        </StackLayout> 
     </StackLayout>
     
 </ContentPage>
