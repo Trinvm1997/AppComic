@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppComic.Views.PersonalPage"
+             Title="Personal">
+    <ContentPage.Content>
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height=".01*" />
+                <RowDefinition Height="2.1*" />
+                <RowDefinition Height=".01*" />
+                <RowDefinition Height="1.5*" />
+                <RowDefinition Height=".01*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <StackLayout Padding="10" VerticalOptions="Center" Grid.Row="0" Grid.Column="0">
+                <Frame
+                Padding="0"
+                IsClippedToBounds="True"
+                VerticalOptions="Center"
+                CornerRadius="60"
+                HorizontalOptions="Center"
+                HeightRequest="100"
+                WidthRequest="100">
+                    <Image Source="anh1" Aspect="Fill"/>
+                </Frame>
+            </StackLayout>
+
+            <Grid Grid.Row="0" Grid.Column="1" Padding="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".5*" />
+                    <RowDefinition Height=".5*" />
+                </Grid.RowDefinitions>
+
+                <Frame Padding="5" Grid.Column="0" Grid.Row="0">
+                    <Label Text="Tên người dùng" 
+                       VerticalOptions="Center" HorizontalOptions="Center"/>
+                </Frame>
+                <Button Text="Đăng Nhập" Grid.Row="1" Grid.Column="0" BackgroundColor="DeepSkyBlue"/>
+            </Grid>
+
+            <BoxView Color="Silver" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
+
+            <StackLayout Padding="5" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2">
+                <Button Text="Nạp xu" BackgroundColor="DeepSkyBlue"/>
+                <Button Text="Nâng cấp tài khoản" BackgroundColor="DeepSkyBlue"/>
+                <Button Text="Kiếm xu miễn phí" BackgroundColor="DeepSkyBlue"/>
+            </StackLayout>
+
+            <BoxView Color="Silver" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"/>
+
+            <StackLayout Padding="10" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2">
+                <Button Text="Hổ trợ khách hàng" BackgroundColor="DeepSkyBlue"/>
+                <Button Text="Điều lệ sử dụng" BackgroundColor="DeepSkyBlue"/>
+            </StackLayout>
+            
+            <BoxView Color="Silver" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
