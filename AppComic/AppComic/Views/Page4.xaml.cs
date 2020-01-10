@@ -51,5 +51,10 @@ namespace AppComic.Views
             if (viewModel.Items.Count == 0)
                 viewModel.LoadItemsCommand.Execute(null);
         }
+
+        private void DeleteItem_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

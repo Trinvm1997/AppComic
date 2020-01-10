@@ -8,7 +8,10 @@
 
     <ScrollView >
         <StackLayout Padding="0" Spacing="0">
-            <Button Text="Add" BackgroundColor="AliceBlue" HorizontalOptions="End" Clicked="AddItem_Clicked" Margin="10"/>
+            <Grid>
+                <Button Text="Add" BackgroundColor="AliceBlue" HorizontalOptions="End" Clicked="AddItem_Clicked" Margin="10"/>
+                <Button Text="Delete" BackgroundColor="AliceBlue" HorizontalOptions="Start" Margin="10"/>
+            </Grid>
             <Grid Padding="10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
