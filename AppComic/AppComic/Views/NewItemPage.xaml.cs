@@ -21,8 +21,8 @@ namespace AppComic.Views
 
             Item = new Item
             {
-                Text = "Item name",
-                Description = "This is an item description."
+                Text = "Tên chương",
+                Description = "Nội dung chương"
             };
 
             BindingContext = this;

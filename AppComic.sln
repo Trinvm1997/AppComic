@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppComic.Android", "AppComi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppComic.iOS", "AppComic\AppComic.iOS\AppComic.iOS.csproj", "{94BA0538-3862-469C-BFE1-85A69EAB2574}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppComic", "AppComic\AppComic\AppComic.csproj", "{9028523D-4601-4781-A5A6-266A0EA74210}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppComic", "AppComic\AppComic\AppComic.csproj", "{9028523D-4601-4781-A5A6-266A0EA74210}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

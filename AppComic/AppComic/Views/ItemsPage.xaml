@@ -11,13 +11,13 @@
             BarTextColor="Black"
              x:Name="BrowseItemsPage">
 
-    <local:Page1 >
+    <local:Page1 Title="Cultivator" >
         
     </local:Page1>
-    <local:Page2>
+    <local:Page2 Title="affection">
         
     </local:Page2>
-    <local:Page3>
+    <local:Page3 Title="Harem">
         
     </local:Page3>
 

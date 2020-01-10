@@ -15,6 +15,12 @@ namespace AppComic.Views
         public HomePage()
         {
             InitializeComponent();
+
+        }
+
+        async void ImageButton1(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new Page4());
         }
     }
 }

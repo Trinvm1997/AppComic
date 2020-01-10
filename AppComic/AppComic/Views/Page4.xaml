@@ -21,8 +21,8 @@
                     <Button Text="   &#60;   Back                                                                               " 
                             Clicked="ButtonBack" BackgroundColor="AliceBlue" />
                 </Frame>
-                <Frame Padding="10" Grid.Row="1" >
-                    <Image Source="anh4.jpg"/>
+                <Frame Padding="0"  Grid.Row="1" >
+                    <Image Source="anh4.jpg" Aspect="AspectFill"/>
                 </Frame>
                 <Frame Grid.Row="2" Padding="0">
                     <Grid>

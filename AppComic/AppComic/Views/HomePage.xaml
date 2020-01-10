@@ -8,43 +8,121 @@
              Title="Home">
     <ScrollView>
         <StackLayout>
-            <Image Source="anh1.png" Aspect="Fill"/>
-            <Grid Margin="20,35,20,20">
+            <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="20"/>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="40"/>
                 </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.5*"/>
-                    <ColumnDefinition Width="0.5*"/>
-                </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.RowSpan="2" Text="Most Viewed Story"/>
-                <Label BackgroundColor="AliceBlue" Grid.Row="1" Grid.Column="0" Text="Story" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
-                <Label BackgroundColor="AliceBlue" Grid.Row="1" Grid.Column="1" Text="Story" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
-                <Label BackgroundColor="AliceBlue" Grid.Row="2" Grid.Column="0" Text="Story" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
-                <Label BackgroundColor="AliceBlue" Grid.Row="2" Grid.Column="1" Text="Story" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                <Frame Padding="0" Grid.Row="0">
+                    <SearchBar Placeholder="Nhập tên truyện"  />
+                </Frame>
+                <Frame Grid.Row="1" Padding="0" >
+                    <Image Source="anh4.jpg" Aspect="AspectFill"/>
+                    
+
+                </Frame>
+                <Frame Grid.Row="2" Padding="0" BackgroundColor="LightYellow">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="Truyện mới cập nhập" Grid.Row="0"/>
+                        <StackLayout Grid.Row="1">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Frame Grid.Column="0" Padding="0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="40"/>
+                                        </Grid.RowDefinitions>
+                                        <ImageButton Source="anh7.jpg" Grid.Row="0" Clicked="ImageButton1" />
+                                        <Label Text="Đấu Phá Thương Khung" Grid.Row="1" />
+                                    </Grid>
+                                </Frame>
+                                <Frame Grid.Column="1" Padding="0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="40"/>
+                                        </Grid.RowDefinitions>
+                                        <Image Source="anh5.jpg" Grid.Row="0" />
+                                        <Label Text=" Đấu La Đại Lục " Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+                                <Frame Grid.Column="2" Padding="0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="40"/>
+                                        </Grid.RowDefinitions>
+                                        <ImageButton Source="anh6.jfif" Grid.Row="0" />
+                                        <Label Text=" Long Vương Truyền Thuyết " Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+                            </Grid>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+
+                <Frame Grid.Row="3" Padding="0" BackgroundColor="AliceBlue">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="Truyện ngụ ngôn" Grid.Row="0"/>
+                        <StackLayout Grid.Row="1">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Frame Grid.Column="0" Padding="0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="40"/>
+                                        </Grid.RowDefinitions>
+                                        <ImageButton Source="anh1.png" Grid.Row="0" />
+                                        <Label Text="Đấu Phá Thương Khung" Grid.Row="1" />
+                                    </Grid>
+                                </Frame>
+                                <Frame Grid.Column="1" Padding="0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="40"/>
+                                        </Grid.RowDefinitions>
+                                        <ImageButton Source="anh1.png" Grid.Row="0" />
+                                        <Label Text=" Đấu La Đại Lục " Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+                                <Frame Grid.Column="2" Padding="0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="40"/>
+                                        </Grid.RowDefinitions>
+                                        <ImageButton Source="anh1.png" Grid.Row="0" />
+                                        <Label Text=" Đấu La Đại Lục " Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+                            </Grid>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+
             </Grid>
-            <Grid Margin="20,35,20,20">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="20"/>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.5*"/>
-                    <ColumnDefinition Width="0.5*"/>
-                </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.RowSpan="2" Text="Most Recommended Story"/>
-                <Label BackgroundColor="AliceBlue" Grid.Row="1" Grid.Column="0" Text="Story" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
-                <Label BackgroundColor="AliceBlue" Grid.Row="1" Grid.Column="1" Text="Story" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
-                <Label BackgroundColor="AliceBlue" Grid.Row="2" Grid.Column="0" Text="Story" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
-                <Label BackgroundColor="AliceBlue" Grid.Row="2" Grid.Column="1" Text="Story" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
-            </Grid>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Button Text="Signup"/>
-                <Button Text="Login"/>
-            </StackLayout>
         </StackLayout>
     </ScrollView>
 </ContentPage>

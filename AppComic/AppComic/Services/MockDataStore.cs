@@ -14,12 +14,12 @@ namespace AppComic.Services
         {
             items = new List<Item>()
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Chap 1", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Chap 1", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Chap 1", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Chap 1", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Chap 1", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." }
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Chap 1", Description="Chuong 1 day ne" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Chap 2", Description="Chuong 2 day ne" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Chap 3", Description="Chuong 3 day ne" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Chap 4", Description="Chuong 4 day ne" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Chap 5", Description="Chuong 5 day ne" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Chap 6", Description="Chuong 6 day ne" }
             };
         }
 

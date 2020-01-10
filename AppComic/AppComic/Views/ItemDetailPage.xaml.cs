@@ -46,7 +46,7 @@ namespace AppComic.Views
             var item = new Item
             {
                 Text = "Item 1",
-                Description = "This is an item description."
+                Description = "chap 1 ne"
             };
 
             viewModel = new ItemDetailViewModel(item);
@@ -58,7 +58,7 @@ namespace AppComic.Views
             var item = new Item
             {
                 Text = "Item 2",
-                Description = "This is an item description 2."
+                Description = "chap 2 ne"
             };
 
             viewModel = new ItemDetailViewModel(item);

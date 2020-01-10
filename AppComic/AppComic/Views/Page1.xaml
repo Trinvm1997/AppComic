@@ -6,8 +6,8 @@
              mc:Ignorable="d"             
              x:Class="AppComic.Views.Page1" Title="Page 1" >
     <ScrollView>
-        <StackLayout Padding="10" Spacing="10">
-            <Grid Padding="10">
+        <StackLayout Padding="0" Spacing="0">
+            <Grid Padding="0">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
@@ -21,8 +21,8 @@
                             <ColumnDefinition/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                        <Image Source="anh1.png" Aspect="Fill" />
-                        <StackLayout Orientation="Vertical" Grid.Column="1" Padding="10">
+                        <Image Source="anh7"  HeightRequest="100" WidthRequest="200"  />
+                        <StackLayout Orientation="Vertical" Grid.Column="1" Padding="0">
                             <Label Text="Đấu phá thương khung" 
                                    HorizontalTextAlignment="Start" FontSize="Small" TextColor="Black"/>
                             <Label>
@@ -55,7 +55,7 @@
                             <ColumnDefinition/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                        <StackLayout Orientation="Vertical" Padding="10">
+                        <StackLayout Orientation="Vertical" Padding="0">
                             <Label Text="Võ động càng khôn"  HorizontalTextAlignment="Start"
                        FontSize="Small" TextColor="Black"/>
                             <Label HorizontalOptions="Start" >
@@ -82,7 +82,7 @@
                             <Button BackgroundColor="#C1802A" TextColor="White" BorderRadius="30" HorizontalOptions="FillAndExpand"
                             Text="Theo dõi" FontSize="Small"/>
                         </StackLayout>
-                        <Image Source="anh2.jfif" Aspect="Fill" 
+                        <Image Source="anh2.jfif" HeightRequest="100" WidthRequest="200"
                            Grid.Column="1"/>
                     </Grid>
                 </Frame>
@@ -92,9 +92,9 @@
                             <ColumnDefinition />
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                        <Image Source="anh1.png" Aspect="Fill"/>
-                        <StackLayout Orientation="Vertical" Grid.Column="1" Padding="10">
-                            <Label Text="Đại Chúa Tể" 
+                        <Image Source="anh5.jpg" HeightRequest="100" WidthRequest="200"/>
+                        <StackLayout Orientation="Vertical" Grid.Column="1" Padding="0">
+                            <Label Text="Long Vương Truyền Thuyết" 
                                    HorizontalTextAlignment="Start" FontSize="Small" TextColor="Black"/>
                             <Label HorizontalOptions="End" >
                                 <Label.FormattedText>
@@ -121,12 +121,12 @@
                     </Grid>
                 </Frame>
                 <Frame Grid.Row="3" Padding="0">
-                    <Grid>
+                    <Grid >
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                        <StackLayout Orientation="Vertical" Padding="10">
+                        <StackLayout Orientation="Vertical" Padding="0">
                             <Label Text="Toàn Chức Pháp Sư"  HorizontalTextAlignment="End"
                        FontSize="Small" TextColor="Black"/>
                             <Label HorizontalOptions="Start" >
@@ -150,8 +150,8 @@
                             <BoxView Color="Gray" HorizontalOptions="FillAndExpand" HeightRequest="1"/>
                             <Button BackgroundColor="#C1802A" TextColor="White" BorderRadius="30" HorizontalOptions="FillAndExpand"
                             Text="Theo Dõi" FontSize="Small"/>
-                        </StackLayout>
-                        <Image Source="anh1.png" Aspect="Fill" 
+                        </StackLayout >
+                        <Image Source="anh6.jfif" HeightRequest="100" WidthRequest="200" 
                            Grid.Column="1"/>
                     </Grid>
                 </Frame>
@@ -161,8 +161,8 @@
                             <ColumnDefinition />
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                        <Image Source="anh1.png" Aspect="Fill"/>
-                        <StackLayout Orientation="Vertical" Grid.Column="1" Padding="10">
+                        <Image Source="anh1.png" HeightRequest="100" WidthRequest="200"/>
+                        <StackLayout Orientation="Vertical" Grid.Column="1" Padding="0">
                             <Label Text="Đấu La Đại Lục" 
                                    HorizontalTextAlignment="Start" FontSize="Small" TextColor="Black"/>
                             <Label>
